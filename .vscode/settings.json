@@ -1,0 +1,29 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/py312/Scripts/python.exe",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [
+        120
+    ],
+    "black-formatter.interpreter": [
+        "python"
+    ],
+    "flake8.args": [
+        "--config=${workspaceFolder}/tox.ini"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-words": {
+            "name": "custom-words",
+            "path": "${workspaceRoot}/../custom-words.txt",
+            "description": "Words used in this project",
+            "addWords": true
+        },
+        "custom": true, // Enable the `custom` dictionary
+        "internal-terms": false // Disable the `internal-terms` dictionary
+    }
+}
